@@ -12,9 +12,17 @@ const Search = ({handleFilterCategories, getCategories}) => {
         setText(e.target.value);
     }
 
-    const handleSearchButton = (e) => {
+    const handleSearch = (e) => {
         if(e.key === "Enter" && text){
             handleFilterCategories(text);
+            val(`?search=${text}`)
+        }
+
+    }
+
+    const handleSearchButton = () => {
+        if(text){
+            handleFilterCategories(text)
             val(`?search=${text}`)
         }
 
@@ -29,8 +37,8 @@ const Search = ({handleFilterCategories, getCategories}) => {
 
                 <div className="row">
                     <div className="input-field col s12">
-                        <input id="search" value={text}   onChange={handleText} onKeyDown={handleSearchButton}/>
-                        <a className="waves-effect waves-light btn"><i className="material-icons">search</i></a>
+                        <input id="search" value={text}   onChange={handleText} onKeyDown={handleSearch}/>
+                        <a className="waves-effect waves-light btn" onClick={handleSearchButton}><i className="material-icons">search</i></a>
 
                     </div>
                 </div>
