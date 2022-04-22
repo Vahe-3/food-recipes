@@ -1,0 +1,32 @@
+.HeaderAdditional{
+    height: 200px;
+    background: url("https://www.mccain.com/media/3505/passion-for-food-selection-of-mccain-food-offerings-header.jpg");
+
+}
+
+.title{
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 200px;
+    text-align: center;
+    background-color: rgba(125, 245, 126, 0.9);
+    border-radius: 5px;
+}
+
+.title > h1 {
+margin-top: 10px;
+    color: #47210c;
+}
+
+.logo > img {
+    width: 160px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+    border-radius: 5px;
+
+
+}
+

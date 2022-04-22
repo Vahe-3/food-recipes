@@ -1,0 +1,8 @@
+.categoriesItem {
+    display: flex;
+}
+
+.span {
+    color: black !important;
+    margin-left: 10px;
+}

@@ -1,0 +1,13 @@
+.nav{
+    position: fixed;
+    top:90%;
+    left: 20px;
+
+}
+
+.nav > a {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

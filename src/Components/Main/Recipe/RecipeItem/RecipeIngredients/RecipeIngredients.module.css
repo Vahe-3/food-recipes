@@ -1,0 +1,26 @@
+
+
+.recipeIngredients{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    font-size: 20px;
+    gap: 200px;
+}
+
+.recipeIngredients h4 {
+    margin-bottom: 30px;
+    border-bottom: #9a9a9a solid 2px;
+    padding-bottom: 10px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.ingredients, measures > div {
+     display: block;
+ }
+
