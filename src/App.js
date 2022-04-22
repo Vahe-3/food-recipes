@@ -11,7 +11,6 @@ function App() {
         <div className="App">
             <BrowserRouter basename="/food-recipes">
                 <Header/>
-
                 <Main/>
                 <Footer/>
             </BrowserRouter>

@@ -25,9 +25,12 @@ const homeSlice = createSlice({
     },
 
     reducers: {
-        addCategories(state, action) {
-            
-            state.categories.push(action.payload);
+        filterCategories(state, action) {
+
+            state.categories = state.categories.filter(category => {
+                return category.strCategory.toLowerCase().includes(action.payload);
+            })
+
         }
     },
 
@@ -54,5 +57,5 @@ const homeSlice = createSlice({
     }
 });
 
-export const {addCategories} = homeSlice.actions;
+export const {filterCategories} = homeSlice.actions;
 export default homeSlice.reducer;
