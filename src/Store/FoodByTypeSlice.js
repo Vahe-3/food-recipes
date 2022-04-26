@@ -1,9 +1,6 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import {getFilteredCategory} from "../Api/api";
 
-
-
-
 export const getFoodByTypeThunk = createAsyncThunk(
 
     'foodByType/getFoodByTypeThunk',

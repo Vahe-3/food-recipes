@@ -1,6 +1,6 @@
 import {configureStore} from "@reduxjs/toolkit";
 import homeReducer from "./HomeSlice";
-import foodByTypeReducer from "./FoodByTypeSlice"
+import foodByTypeReducer from "./FoodByTypeSlice";
 import {recipeSliceReducer} from "./RecipeSlice";
 
 const store = configureStore({
@@ -11,7 +11,6 @@ const store = configureStore({
     }
 });
 
-window.store = store.getState()
 
 export default  store;
 

@@ -51,8 +51,6 @@ const homeSlice = createSlice({
 
         [getCategoriesThunk.rejected]: (state, action) => {
 
-            
-
         },
     }
 });

@@ -20,8 +20,6 @@ code {
 }
 
 
-
-
 .Main {
   min-height: calc(100vh - 62px - 70px);
 
@@ -31,9 +29,6 @@ code {
 
 }
 
-.Footer {
-
-}
 
 .Preloader  {
   left: 50%;

@@ -16,21 +16,18 @@ const Recipe = () => {
     useEffect(() => {
 
         dispatch(getRecipeThunk(id))
-    }, [])
+    }, []);
 
-    if(isLoading){
-        return <Preloader />
+    if (isLoading) {
+        return <Preloader/>
     }
-
-
-
 
     return (
         <>
-            <Nav />
-        <div className={style.recipe}>
-            <RecipeItem {...recipe[0]} />
-        </div>
+            <Nav/>
+            <div className={style.recipe}>
+                <RecipeItem {...recipe[0]} />
+            </div>
 
         </>
     )

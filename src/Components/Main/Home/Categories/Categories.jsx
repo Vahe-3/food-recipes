@@ -4,16 +4,15 @@ import CategoriesItem from './CategoriesItem/CategoriesItem';
 
 const Categories = ({categories}) => {
 
-  return (
+    return (
 
-    <div className={style.categories} >
-          {
-            categories.map((category) => <CategoriesItem key={category.idCategory} {...category}/> )
-          }
-    </div>
-  )
-}
-
+        <div className={style.categories}>
+            {
+                categories.map((category) => <CategoriesItem key={category.idCategory} {...category}/>)
+            }
+        </div>
+    )
+};
 
 
 export default Categories;

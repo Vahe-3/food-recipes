@@ -3,17 +3,16 @@ import style from "./RecipeItem.module.css";
 import RecipeIngredients from "./RecipeIngredients/RecipeIngredients";
 
 
-const RecipeItem = ({idMeal, strMealThumb, strMeal, strCategory, strArea, strInstructions, strYoutube, ...props }) => {
+const RecipeItem = ({idMeal, strMealThumb, strMeal, strCategory, strArea, strInstructions, strYoutube, ...props}) => {
 
     useEffect(() => {
         window.scroll(0, 0);
 
-
-    }, [])
+    }, []);
 
     const toVideo = () => {
         window.scroll(0, 980);
-    }
+    };
 
     return (
 
@@ -21,12 +20,16 @@ const RecipeItem = ({idMeal, strMealThumb, strMeal, strCategory, strArea, strIns
             <div className={style.recipeInfo}>
                 <div>
                     <h3>{strMeal}</h3>
-                    <img src={strMealThumb}/>
+                    <img src={strMealThumb} alt={strMeal}/>
                     <div className={style.recipeInfoItem}>
                         <h5>{strCategory + " , " + (strArea ? strArea : "")}</h5>
+
                         {
-                            strYoutube ?  <a onClick={() => toVideo()} className="waves-effect waves-light btn large">video
-                            instruction</a> : null}
+                            strYoutube ?
+                                <a onClick={() => toVideo()} className="waves-effect waves-light btn large">
+                                    video instruction</a>
+                                : null
+                        }
                     </div>
 
                 </div>
@@ -38,26 +41,23 @@ const RecipeItem = ({idMeal, strMealThumb, strMeal, strCategory, strArea, strIns
 
             </div>
 
-            <h3 className={style.title}>Video instruction</h3>
 
             {
-                strYoutube ?  <div className={style.recipeVideo}>
-
-                    <iframe width="1280" height="720" src={`https://www.youtube.com/embed/${strYoutube.slice(-11)}`}  allowFullScreen>
-
-
-                    </iframe>
-
-                </div> : null
+                strYoutube ? <>
+                    <h3 className={style.title}>Video instruction</h3>
+                    <div className={style.recipeVideo}>
+                        <iframe width="1280"
+                                height="720"
+                                src={`https://www.youtube.com/embed/${strYoutube.slice(-11)}`}
+                                allowFullScreen>
+                        </iframe>
+                    </div>
+                </> : null
             }
-
-
 
             <RecipeIngredients {...props} />
 
-
         </div>
-
 
     )
 };

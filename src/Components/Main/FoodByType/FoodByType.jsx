@@ -16,8 +16,11 @@ const FoodByType = () => {
 
 
     useEffect(() => {
+
         dispatch(getFoodByTypeThunk(name));
-    }, [name])
+        window.scroll(0, 0);
+
+    }, [name]);
 
     if (isLoading) {
         return <Preloader/>

@@ -9,8 +9,8 @@ const instance = axios.create({
 
 });
 
-const getMealById =  (mealId) => {
-    return  instance.get("lookup.php?i=" + mealId);
+const getMealById = (mealId) => {
+    return instance.get("lookup.php?i=" + mealId);
 };
 
 const getAllCategories = () => {
