@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/food-recipes/static/css/main.38d1bb5f.css",
-    "main.js": "/food-recipes/static/js/main.f28ee1c6.js",
+    "main.css": "/food-recipes/static/css/main.a921615e.css",
+    "main.js": "/food-recipes/static/js/main.2477d5b4.js",
     "static/js/787.fbca7122.chunk.js": "/food-recipes/static/js/787.fbca7122.chunk.js",
     "static/media/logo.jpg": "/food-recipes/static/media/logo.7ac59ebca1f9d1c68c1b.jpg",
     "index.html": "/food-recipes/index.html",
-    "main.38d1bb5f.css.map": "/food-recipes/static/css/main.38d1bb5f.css.map",
-    "main.f28ee1c6.js.map": "/food-recipes/static/js/main.f28ee1c6.js.map",
+    "main.a921615e.css.map": "/food-recipes/static/css/main.a921615e.css.map",
+    "main.2477d5b4.js.map": "/food-recipes/static/js/main.2477d5b4.js.map",
     "787.fbca7122.chunk.js.map": "/food-recipes/static/js/787.fbca7122.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38d1bb5f.css",
-    "static/js/main.f28ee1c6.js"
+    "static/css/main.a921615e.css",
+    "static/js/main.2477d5b4.js"
   ]
 }
